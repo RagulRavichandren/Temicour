@@ -2,9 +2,15 @@ services:
   - type: web
     name: swiftroute-courier-backend
     runtime: docker
+    rootDir: backend
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
     plan: free
     healthCheckPath: /
     envVars:
       - key: MYSQL_URL
+        sync: false
       - key: MYSQL_USERNAME
+        sync: false
       - key: MYSQL_PASSWORD
+        sync: false

@@ -13,7 +13,7 @@
 
     const legend = document.createElement('div');
     legend.className = 'report-pie-legend';
-    legend.innerHTML = `<strong class="report-pie-title">${title}</strong><span><i class="receive"></i>Receive <b>${formatValue(received)}</b></span><span><i class="send"></i>Send <b>${formatValue(sent)}</b></span>`;
+    legend.innerHTML = `<strong class="report-pie-title">${title}</strong><span><i class="receive"></i>Received <b>${formatValue(received)}</b></span><span><i class="send"></i>Sent <b>${formatValue(sent)}</b></span>`;
 
     row.append(pie, legend);
     summaryLabel.after(row);
